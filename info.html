@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Store - Wang</title>
+  <h1>My Book Store</h1>
+  <link rel='stylesheet' href='normalize.css'>
+  <script type="text/javascript" src="info.js"></script>
+</head>
+
+<div class="center">
+    <div class="body">
+        <form name="SignUp" action="https://httpbin.org/post" method="POST" onsubmit="return validate();">
+            
+            <label for="fName">First Name</label>
+            <input required type="text" name="fName" id="fName"><br>
+            <label for="lName">Last Name</label>
+            <input required type="text" name="lName" id="lName"><br>
+            <label for="pwd">Password</label>
+            <input required type="pwd" name="pwd" id="pwdMatch"><br>
+            <label for="uName">Username</label>
+            <input required type="uName" name="uName" id="uName" minlength ="6"><br>
+            <label for="eLevel">Education Level</label><br>
+            <select name="Education level" id="Education level" multiple="multiple" required>
+                <optgroup>
+                    <option value="1"> - select - </option>
+                    <option value="2">Technical Diploma</option>
+                    <option value="3">College Diploma</option>
+                    <option value="4">Bachelor's Degree</option>
+                    <option value="5">Master's Degree and others</option>
+                </optgroup>
+            </select>
+            <br>
+            <label for="eStatus">Education Status</label>
+            <ul>
+                <li><input type="radio" name="eStatus" id="eStatus1" value="Graduated">Graduated</li>
+                <li><input type="radio" name="eStatus" id="eStatus2" value="Current enrolled">Current enrolled</li>
+                <li><input type="radio" name="eStatus" id="eStatus1" value="Did not graduate">Did not graduate</li>
+            </ul>
+            <br>
+            <label for="email">Email</label>
+            <input required type="email" name="email" id="email" ><br>
+            <label for="age">Age</label>
+            <input required type="age" name="age" id="age"><br>
+            <label for="EStatus">Education Status</label>
+            <input required type="EStatus" name="EStatus" id="EStatus"><br>
+
+            <input type="hidden" name="lastName" id="lastName" value="Wang" />
+            <input type="hidden" name="studentId" id="studentId" value="10740181" />
+            
+            <!-- Submit -->
+            <input type="submit" value="Submit information"  />
+            <input type="reset"  value="    Clear   " onclick="clear()"/>
+
+        </form>
+
+
+
+
